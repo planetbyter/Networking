@@ -18,15 +18,14 @@ The centauri switch (a ToR switch) contained with each four chips serving a subn
 # Facebook's Data Center Fabric and the Limits of Clusters
 Facebook as a company and organization had-- early in their career-- made its particular goal to understand the limits of "clusters" and how to best scale a data center in a more efficient, and topologically beauteous fashion. Firstly, the limits of clusters; a cluster is a unit of deployment involving many hundreds of "Top of the Rack (ToR)" switches, aggregated on large high radix cluster switches. The size of a clister, then, is ultimately limited by the port density of the cluster switch itself. The topology of clustering had predetermined the engineering of the infrastructure itself. Facebook with its Data Center Fabric (DCF) reserves, in comparison, an equal amount of uplink capacity on what they call "Pods" for each downlink: a 1:1 oversubscription ratio! The company realized that the ned for a high amount of ports is against the desire to provide the highest bandwidth infrastructure possible. In allocating more ports to accomodate inter-cluster traffic, we take away the density from the size of the cluster as a whole. This fabric was enginered using a 16 plane architecture, with 1.6T of capacity per rack. Server pods created high performance connectivity between individual server pods. A "Pod" in this sense is referenced as a "unit of network" (Andreyev). Each pod is connected ot at least 4 fabric switches. This creates a scalable architecture; more compute capacity? Add more server pods. More extra-fabric connectivity? Add edge pods or scale uplinks in the existing switches. This is what is known as the "top down" approach, where there exists only the minimum neecessary protocol features. Facebook also developed a centralized controller that is able to override routing paths by purely making software-level actions. From the Facebook building, to its campus, to its distributed networks: there is a great beauty in this architectural elegance and intuitive simplicity. 
 
+- The network is all layer3-- from the ToR uplinks to the edges. Dual stacked, the network supports IPv4 and IPv6 technologies which provides the unique IP addresses necessary for Internet-enabled devices to communicate.
 
-| GitHub | [plugins/github/README.md][PlGh] |
-| Google Drive | [plugins/googledrive/README.md][PlGd] |
-| OneDrive | [plugins/onedrive/README.md][PlOd] |
-| Medium | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
+# Sources
+
+[GitHub](http://github.com)
+|
+[Blog](https://polymathictendencies.blogspot.com/2020/06/polymathic-tendencies-blog-for-all.html)
 
 
 
-
-(
 
