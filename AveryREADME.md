@@ -28,7 +28,7 @@ Facebook as a company and organization had-- early in their career-- made its pa
 |
 [Source 1: Andreyev](https://engineering.fb.com/production-engineering/introducing-data-center-fabric-the-next-generation-facebook-data-center-network/)
 |
-[Source 2:](https://dl.acm.org/doi/pdf/10.1145/2975159)
+[Source 2](https://dl.acm.org/doi/pdf/10.1145/2975159)
 
 
 
